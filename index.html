@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Plantum - Gestión de Plantas</title>
+</head>
+<body>
+    <header>
+        <h1>Plantum</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <section class="formulario">
+                <h2>Agregar Planta</h2>
+                <input type="text" id="nombre_pl" placeholder="Nombre de la planta" required />
+                <input type="text" id="cuidado_pl" placeholder="Cuidados" required />
+                <input type="text" id="riego_pl" placeholder="Riego" required />
+                <input type="text" id="luz_pl" placeholder="Luz" required />
+                <input type="file" id="archivo" accept="image/*">
+                <button onclick="agregarPlanta()">Agregar Planta</button>
+                <button onclick="eliminar()">Eliminar Planta</button>
+                <button onclick="modificarPlanta()">Modificar Planta</button>
+                <ul id="listado"></ul>
+            </section>
+        </div>
+        <section class="galeria">
+            <h2>Mis Plantas</h2> 
+            <div id="galeria" class="galeria"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 Plantum. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
